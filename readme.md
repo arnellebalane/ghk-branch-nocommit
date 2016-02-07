@@ -9,7 +9,7 @@ plugin for **[ghk](https://www.npmjs.com/package/ghk)** package
 #### installation
 
 ```
-$ npm install --save ghk-branch-nocommit
+$ npm install --save-dev ghk-branch-nocommit
 ```
 
 #### usage
