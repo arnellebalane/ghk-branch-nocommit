@@ -1,6 +1,6 @@
 {
   "name": "ghk-branch-nocommit",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "git hook to prevent commits on specified branches",
   "main": "distribution/index.js",
   "scripts": {
