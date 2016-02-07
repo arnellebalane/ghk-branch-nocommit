@@ -11,8 +11,11 @@ function precommit(config = {}) {
         let currentBranch = command.output.trim();
         let allowed = !branches.includes(currentBranch);
         if (!allowed) {
-            return readline.keyInYN('You are not supposed to commit in this '
-                + 'branch. Proceed?');
+            let proceed = readline.keyInYN(`Attempting to commit in branch `
+                + `"${currentBranch}". Proceed?`);
+            if (!proceed) {
+                return `Aborting commit in branch "${currentBranch}"`;
+            }
         }
     }
     return true;
